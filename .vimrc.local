@@ -23,6 +23,7 @@ imap <C-v> <Esc>+gPi
 map <F6> :call MoveToNextTab()<CR><C-w>L
 map <F5> :call MoveToPrevTab()<CR><C-w>L
 color base16-ashes
+let g:syntastic_go_checkers = ['go']
 
 function MoveToPrevTab()
   "there is only one window
