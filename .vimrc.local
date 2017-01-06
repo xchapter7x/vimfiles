@@ -22,13 +22,11 @@ map <C-v> +gP
 imap <C-v> <Esc>+gPi
 map <F6> :call MoveToNextTab()<CR><C-w>L
 map <F5> :call MoveToPrevTab()<CR><C-w>L
-color base16-ashes
-let g:syntastic_go_checkers = ['go']
-set clipboard=unnamed
 "colorscheme base16-flat 
 "colorscheme base16-ocean
 "colorscheme base16-embers
-colorscheme base16-railscasts
+"colorscheme base16-railscasts
+colorscheme base16-harmonic16
 let g:syntastic_go_checkers = ['go']
 set clipboard=unnamed
 nnoremap tk  :tabnext<CR>
@@ -38,6 +36,7 @@ nnoremap td  :tabclose<CR>
 nnoremap tl :tabnext<CR>
 nnoremap th :tabprev<CR>
 nnoremap tn :tabnew<CR>
+nnoremap f :echo expand('%:p')<CR>
 
 function MoveToPrevTab()
   "there is only one window
