@@ -25,6 +25,19 @@ map <F5> :call MoveToPrevTab()<CR><C-w>L
 color base16-ashes
 let g:syntastic_go_checkers = ['go']
 set clipboard=unnamed
+"colorscheme base16-flat 
+"colorscheme base16-ocean
+"colorscheme base16-embers
+colorscheme base16-railscasts
+let g:syntastic_go_checkers = ['go']
+set clipboard=unnamed
+nnoremap tk  :tabnext<CR>
+nnoremap tj  :tabprev<CR>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+nnoremap tl :tabnext<CR>
+nnoremap th :tabprev<CR>
+nnoremap tn :tabnew<CR>
 
 function MoveToPrevTab()
   "there is only one window
